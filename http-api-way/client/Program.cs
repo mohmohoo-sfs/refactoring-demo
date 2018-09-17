@@ -19,7 +19,6 @@ namespace client
         {
             Console.WriteLine("Calling the back-end API");
 
-            var apiBaseAddress = "";
             var customDelegatingHandler = new CustomDelegatingHandler();
             var client = new HttpClient(customDelegatingHandler);
             var response = await client.GetAsync("https://localhost:44307/api/secured");
@@ -47,9 +46,6 @@ namespace client
             public CustomDelegatingHandler()
                 : base()
             {
-                //_email = email;
-                //_password = password;
-                //_moduleId = moduleId;
                 InnerHandler = new HttpClientHandler();
 
             }
