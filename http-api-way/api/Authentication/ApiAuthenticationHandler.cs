@@ -67,11 +67,11 @@ namespace api.Authentication
                         return Task.FromResult(AuthenticateResult.Success(_ticket));
                     }
 
-                    return Task.FromResult(AuthenticateResult.Fail("Incorrect Auth"));
+                    return Task.FromResult(AuthenticateResult.Fail("Failed auth"));
                 }
             }
 
-            return Task.FromResult(AuthenticateResult.Fail("Incorrect Auth"));
+            return Task.FromResult(AuthenticateResult.Fail("Failed auth"));
         }
 
         private static string[] GetAuthHeaderValues(string authorisationHeader)
