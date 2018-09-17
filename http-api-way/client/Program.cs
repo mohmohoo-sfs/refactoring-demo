@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace client
 {
+    //http://rredcat.blogspot.com/2017/12/secure-aspnet-core-web-api-using-api.html
+    //http://bitoftech.net/2014/12/15/secure-asp-net-web-api-using-api-key-authentication-hmac-authentication/
+
     class Program
     {
         static void Main(string[] args)
