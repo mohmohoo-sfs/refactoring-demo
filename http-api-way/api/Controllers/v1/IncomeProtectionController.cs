@@ -21,11 +21,13 @@ namespace api.Controllers.v1
             _step2 = step2.OnError(OnError);
         }
 
+        [HttpPost(template: "post/step1")]
         public async Task<IActionResult> Step1(IApplicationStep1Model model)
         {
             return await DoStep(_step1, new Step1Command(model), model);
         }
 
+        [HttpPost(template: "post/step2")]
         public async Task<IActionResult> Step2(IApplicationStep2Model model)
         {
             return await DoStep(_step2, new Step2Command(model), model);
