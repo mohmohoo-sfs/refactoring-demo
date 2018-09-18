@@ -1,4 +1,4 @@
-﻿using api.Infrastructure;
+﻿using api.Interfaces;
 
 namespace api.Products.IncomeProtection
 {

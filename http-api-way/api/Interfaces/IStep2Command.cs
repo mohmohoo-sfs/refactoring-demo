@@ -1,4 +1,4 @@
-﻿namespace api.Infrastructure
+﻿namespace api.Interfaces
 {
     public interface IStep2Command
     {

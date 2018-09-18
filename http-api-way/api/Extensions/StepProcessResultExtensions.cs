@@ -1,4 +1,4 @@
-﻿using api.Infrastructure;
+﻿using api.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Extensions

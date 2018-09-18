@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace api.Infrastructure
+namespace api.Interfaces
 {
     public interface IOnErrorCallBackHolder<ReturnType>
     {

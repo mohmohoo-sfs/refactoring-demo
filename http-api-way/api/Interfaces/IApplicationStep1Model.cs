@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace api.Infrastructure
+namespace api.Interfaces
 {
-    public interface IIncomeProductionApplication
+    public interface IApplicationStep1Model
     {
         string Title { get; set; }
         string Forename { get; set; }

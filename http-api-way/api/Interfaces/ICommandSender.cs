@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace api.Infrastructure
+namespace api.Interfaces
 {
     public interface ICommandSender<TCommand>
     {

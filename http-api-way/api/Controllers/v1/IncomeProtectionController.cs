@@ -1,4 +1,4 @@
-﻿using api.Infrastructure;
+﻿using api.Interfaces;
 using api.Products.IncomeProtection;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
