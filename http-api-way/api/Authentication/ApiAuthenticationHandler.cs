@@ -15,12 +15,7 @@ using System.Web;
 
 namespace api.Authentication
 {
-    public class ApiKeyAuthenticationOptions : AuthenticationSchemeOptions
-    {
-        public string Realm { get; set; }
-    }
-
-    public class ApiAuthenticationHandler : AuthenticationHandler<ApiKeyAuthenticationOptions>
+    public class ApiAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
         private static readonly Dictionary<string, string> _AllowedApps = new Dictionary<string, string>
         {
@@ -33,7 +28,7 @@ namespace api.Authentication
 
         public ApiAuthenticationHandler(
             IMemoryCache memoryCache,
-            IOptionsMonitor<ApiKeyAuthenticationOptions> options, 
+            IOptionsMonitor<AuthenticationSchemeOptions> options, 
             ILoggerFactory loggerFactory, 
             UrlEncoder encoder,
             ISystemClock systemClock)

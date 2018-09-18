@@ -83,7 +83,8 @@ namespace client
                 var secretKeyByteArray = Convert.FromBase64String(APIKey);
 
                 var signature = Encoding.UTF8.GetBytes(signatureRawData);
-
+                //HMACSHA384
+                //HMACSHA512
                 using (var hmac = new HMACSHA256(secretKeyByteArray))
                 {
                     var signatureBytes = hmac.ComputeHash(signature);
